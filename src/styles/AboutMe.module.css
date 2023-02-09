@@ -1,0 +1,58 @@
+.title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #7c28f2;
+  padding: 16px;
+  margin: 16px;
+}
+
+.aboutMe {
+  height: auto;
+  width: 100%;
+  padding: 16px 0px;
+}
+
+.aboutMe > h2 {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 63px;
+  letter-spacing: 0.01em;
+  color: #443d5e;
+  margin: 0px 16px;
+  padding: 0px 32px;
+}
+
+.grid {
+  margin: 16px;
+  padding: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptionTexts > p {
+  padding: 16px 0px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: rgba(33, 7, 70, 0.65);
+}
+
+.descriptionTexts {
+  padding: 0px;
+  max-width: 600px;
+}
+
+.aboutMe > a {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin-left: 32px;
+}
+
+@media only screen and (max-width: 480px) {
+  .grid {
+    display: block;
+    justify-content: space-between;
+  }
+}
