@@ -1,0 +1,21 @@
+name: Lint
+on: [pull_request]
+env:
+  NODE_VERSION: 18
+
+jobs:
+  linting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install NodeJS 18
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Code Checkout
+        uses: actions/checkout@v2
+      - name: Install pnpm
+        run: npm install -g pnpm
+      - name: Install Dependencies
+        run: npm run ci
+      - name: Run ESLint
+        run: npm run lint

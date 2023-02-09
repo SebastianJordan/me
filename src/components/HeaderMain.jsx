@@ -1,6 +1,6 @@
-import React from 'react';
-import Title from './Title';
-import styles from '../styles/App.module.css';
+import React from 'react'
+import Title from './Title'
+import styles from '../styles/App.module.css'
 export function HeaderMain() {
   return (
     <section className={styles.slideInfo}>
@@ -12,13 +12,10 @@ export function HeaderMain() {
         <a href="#" className="btn-basic">
           View resume
         </a>
-        <a
-          href="https://github.com/SebastianJordan"
-          className="btn-link"
-        >
+        <a href="https://github.com/SebastianJordan" className="btn-link">
           Github Projects
         </a>
       </div>
     </section>
-  );
+  )
 }

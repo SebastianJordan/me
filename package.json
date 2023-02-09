@@ -1,5 +1,5 @@
 {
-  "name": "porfolio",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,11 +8,10 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "ci":"pnpm install --frozen-lockfile"
   },
   "dependencies": {
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -24,9 +23,11 @@
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
     "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "postcss": "^8.4.21",
-    "prettier": "^2.8.3",
+    "prettier": "^2.8.4",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.0"
   }
