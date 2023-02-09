@@ -3,7 +3,7 @@ import styles from './styles/App.module.css'
 import { Navbar } from './components/Navbar'
 import { HeaderMain } from './components/HeaderMain'
 import AboutMe from './components/AboutMe'
-import { FooterPage } from './components/Footer'
+// import { FooterPage } from './components/Footer'
 function App() {
   return (
     <>
