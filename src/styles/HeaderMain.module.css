@@ -1,0 +1,21 @@
+.slideInfo {
+    padding-left: 32px;
+  }
+  
+  .btnGroup {
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: middle;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .slideInfo {
+      padding-left: 16px;
+    }
+  
+    .btnGroup {
+      display: flex;
+      justify-content: space-between;
+      vertical-align: middle;
+    }
+  }
