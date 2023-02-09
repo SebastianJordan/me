@@ -1,0 +1,27 @@
+name: 'Deploy to Vercel '
+
+on:
+  workflow_run:
+    workflows: ['lint']
+    types:
+      - completed
+  push:
+    branches:
+      - main
+env:
+  NODE_VERSION: 18
+jobs:
+  vercel:
+    runs-on: ubuntu-latest
+    name: 'Deploy Personal Portfolio'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - uses: amondnet/vercel-action@v19
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-args: '--prod'
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
