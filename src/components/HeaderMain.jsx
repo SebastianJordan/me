@@ -9,7 +9,7 @@ export function HeaderMain() {
         showBg={true}
       ></Title>
       <div className={styles.btnGroup}>
-        <a href="#" className="btn-basic">
+        <a href="/resume_es.pdf" className="btn-basic">
           View resume
         </a>
         <a href="https://github.com/SebastianJordan" className="btn-link">
