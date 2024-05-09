@@ -21,9 +21,6 @@ export function FooterPage() {
       </section>
       <section className={styles.descriptions}>
         <p>
-          
-        </p>
-        <p>
           Panama City, Panamá, Panama, <span> me@sebastianjordan.com</span>
         </p>
       </section>

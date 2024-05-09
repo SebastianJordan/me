@@ -1,12 +1,13 @@
 import React from 'react'
-import pointImg from '../../public/images/experience-point.svg'
+import Dots from './ui/Dots'
 import grafico from '../../public/images/grafico.svg'
 import styles from '../styles/AboutMe.module.css'
+import ProgressBarVertical from './ui/ProgressBarVertical'
 export default function AboutMe() {
   return (
     <>
       <section className={styles.aboutMe} id="about">
-        <img src={pointImg} alt="img point" width={230} height={118} />
+        <Dots x={6} y={4} />
         <p className={styles.title}>About Me</p>
         <h2>System Analyst at Yappy</h2>
         <div className={styles.grid}>
@@ -21,23 +22,18 @@ export default function AboutMe() {
               concept to launch, applying an agile methodology (Scrum) and
               implementing user-focused reusable component interface systems.
             </p>
+            <a className="btn-basic" href="#">
+              View more
+            </a>
           </article>
           <article>
             <img src={grafico} width={608} height={475} alt="grafico" />
             <br />
-            <img
-              src={pointImg}
-              alt="img point"
-              width={230}
-              height={118}
-              className={styles.groupPoint}
-            />
+            <Dots x={6} y={4} />
           </article>
         </div>
-        {/* <a className="btn-basic" href="#">
-          View more
-        </a> */}
       </section>
+      <ProgressBarVertical porcent={90} label={'Ionic'} />
     </>
   )
 }

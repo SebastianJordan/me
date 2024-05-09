@@ -50,6 +50,7 @@
   margin-left: 32px;
 }
 
+
 @media only screen and (max-width: 480px) {
   .grid {
     display: block;
