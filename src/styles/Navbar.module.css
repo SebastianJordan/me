@@ -21,7 +21,9 @@
   display: table-cell;
   vertical-align: middle;
   margin: auto;
-  padding: 0px 4px;
+  padding: 0px 8px;
+  border-bottom: 2px white solid;
+  padding-bottom: 4px;
 }
 .item:hover {
   border-bottom: 2px #7c28f2 solid;
