@@ -2,13 +2,14 @@ import React from 'react'
 import Dots from './ui/Dots'
 import grafico from '../../public/images/grafico.svg'
 import styles from '../styles/AboutMe.module.css'
-import ProgressBarVertical from './ui/ProgressBarVertical'
 export default function AboutMe() {
   return (
     <>
       <section className={styles.aboutMe} id="about">
-        <Dots x={6} y={4} />
-        <p className={styles.title}>About Me</p>
+        <div className={styles.point}>
+          <Dots x={6} y={4} />
+        </div>
+        <p className={styles.title}>About me</p>
         <h2>System Analyst at Yappy</h2>
         <div className={styles.grid}>
           <article className={styles.descriptionTexts}>
@@ -22,18 +23,17 @@ export default function AboutMe() {
               concept to launch, applying an agile methodology (Scrum) and
               implementing user-focused reusable component interface systems.
             </p>
-            <a className="btn-basic" href="#">
+            {/* <a className="btn-basic" href="#">
               View more
-            </a>
+            </a> */}
           </article>
-          <article>
+          {/* <article>
             <img src={grafico} width={608} height={475} alt="grafico" />
             <br />
             <Dots x={6} y={4} />
-          </article>
+          </article> */}
         </div>
       </section>
-      <ProgressBarVertical porcent={90} label={'Ionic'} />
     </>
   )
 }
