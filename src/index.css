@@ -6,6 +6,10 @@
   --main-btn-color: #7624ea;
 }
 
+body{
+  background-color: #E5E3EC;
+}
+
 .btn-basic,
 .btn-link {
   font-size: 14px;
