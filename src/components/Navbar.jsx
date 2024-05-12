@@ -4,6 +4,24 @@ import PropTypes from 'prop-types'
 import logo from '../../public/images/logo.svg'
 
 export function Navbar({ showMenu }) {
+  const listItem = [
+    {
+      label: 'About',
+      url: '#about',
+      show: true,
+    },
+    {
+      label: 'Experience',
+      url: '#experience',
+      show: false,
+    },
+    {
+      label: 'Project',
+      url: 'https://github.com/SebastianJordan',
+      show: true,
+    },
+  ]
+
   const onClickMailtoHandler = () => {
     window.location.href =
       'mailto:me@sebastianjordan.com?subject=Hi,%20I%20saw%20your%20web%20portfolio.&body=Hello,%20I%20would%20like%20more%20details%20about%20your%20profile'
@@ -15,15 +33,17 @@ export function Navbar({ showMenu }) {
       {showMenu && (
         <>
           <ul className={styles.menu}>
-            <li className={styles.item}>
-              <a href="#about">About</a>
-            </li>
-            {/* <li className={styles.item}>Experience</li> */}
-            <li className={styles.item}>
-              <a href="https://github.com/SebastianJordan">Project</a>
-            </li>
+            {listItem.map((i, index) =>
+              i.show ? (
+                <li key={index} className={styles.item}>
+                  <a href={i.url}>{i.label}</a>
+                </li>
+              ) : (
+                <></>
+              )
+            )}
           </ul>
-          <button className="btn-second " onClick={onClickMailtoHandler}>
+          <button className="btn-second" onClick={onClickMailtoHandler}>
             Contact
           </button>
         </>

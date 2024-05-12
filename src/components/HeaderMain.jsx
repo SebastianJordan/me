@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from './Title'
-import styles from '../styles/App.module.css'
+import styles from '../styles/HeaderMain.module.css'
 export function HeaderMain() {
   return (
     <section className={styles.slideInfo}>

@@ -5,6 +5,8 @@
   color: #7c28f2;
   padding: 16px;
   margin: 16px;
+  max-width: 50%;
+  width: 50%;
 }
 
 .aboutMe {
@@ -13,6 +15,11 @@
   padding: 16px 0px;
 }
 
+.experience {
+  padding: 64px 0px;
+}
+
+.experience > h2,
 .aboutMe > h2 {
   font-weight: 700;
   font-size: 50px;
@@ -20,14 +27,22 @@
   letter-spacing: 0.01em;
   color: #443d5e;
   margin: 0px 16px;
-  padding: 0px 32px;
+  padding: 0px 12px;
 }
 
+.list,
 .grid {
   margin: 16px;
   padding: 32px;
+}
+
+.grid {
   display: flex;
   justify-content: space-between;
+}
+
+.list {
+  text-align: center;
 }
 
 .descriptionTexts > p {
@@ -43,10 +58,15 @@
   max-width: 600px;
 }
 
+.experience > a,
 .aboutMe > a {
   display: flex;
   justify-content: center;
   max-width: 200px;
+  margin-left: 32px;
+}
+
+.point {
   margin-left: 32px;
 }
 
