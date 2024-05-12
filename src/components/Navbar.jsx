@@ -8,14 +8,17 @@ export function Navbar({ showMenu }) {
     {
       label: 'About',
       url: '#about',
+      show: true,
     },
     {
       label: 'Experience',
-      url: '#',
+      url: '#experience',
+      show: false,
     },
     {
       label: 'Project',
       url: 'https://github.com/SebastianJordan',
+      show: true,
     },
   ]
 
@@ -30,13 +33,17 @@ export function Navbar({ showMenu }) {
       {showMenu && (
         <>
           <ul className={styles.menu}>
-            {listItem.map((i, index) => (
-              <li key={index} className={styles.item}>
-                <a href={i.url}>{i.label}</a>
-              </li>
-            ))}
+            {listItem.map((i, index) =>
+              i.show ? (
+                <li key={index} className={styles.item}>
+                  <a href={i.url}>{i.label}</a>
+                </li>
+              ) : (
+                <></>
+              )
+            )}
           </ul>
-          <button className="btn-second " onClick={onClickMailtoHandler}>
+          <button className="btn-second" onClick={onClickMailtoHandler}>
             Contact
           </button>
         </>
