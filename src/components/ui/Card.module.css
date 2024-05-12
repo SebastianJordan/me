@@ -1,0 +1,40 @@
+.box {
+  width: 330px;
+  height: 280px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 1px 0px 0px #e5e3ec;
+  margin: 28px 28px;
+  display: inline-block;
+}
+
+.header {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.icon > img {
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background-color: #eda69c;
+  margin-right: 12px;
+  box-shadow: 0px 0px 1px black;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.description {
+  text-align: justify;
+  padding: 0px 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #210746;
+  visibility: 65%;
+  text-overflow: clip;
+}
