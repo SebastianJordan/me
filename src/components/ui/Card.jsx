@@ -5,7 +5,7 @@ export default function Card({ list }) {
     <div className={styles.box} key={index}>
       <div className={styles.header}>
         <div className={styles.icon}>
-          <img src={`./../../../public/images/apps/${e.icon}`} alt={e.title} />
+          <img src={`images/apps/${e.icon}`} alt={e.title} />
         </div>
         <h3 className={styles.title}>{e.title}</h3>
       </div>
