@@ -5,32 +5,32 @@ export default function ListExperience() {
     {
       title: 'Yappy App',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
+        'The application, initially a module within mobile banking, now robustly supports multiple banks with enhanced features.',
       icon: 'yp.png',
     },
     {
       title: 'Banco General',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
+        'Banking application where you can transfer between accounts, to third parties, and also make service payments.',
       icon: 'bg.png',
     },
     {
       title: 'Copa Recojo',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
+        'Efficient trip management application for seamless commuting between home and work.',
       icon: 'copa.png',
     },
     {
       title: 'Start Optimus',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
+        'Vehicle fleet management application featuring GPS tracking and more capabilities.',
       icon: 'of.png',
     },
     {
       title: 'Vote planing',
       description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ',
-      icon: '',
+        'Application for voting in planning sessions under the Agile Scrum methodology. Comming soon.',
+      icon: 'v.png',
     },
   ]
   return <Card list={listExperience} />

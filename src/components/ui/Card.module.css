@@ -30,7 +30,7 @@
 }
 
 .description {
-  text-align: justify;
+  text-align: start;
   padding: 0px 30px;
   font-size: 18px;
   font-weight: normal;

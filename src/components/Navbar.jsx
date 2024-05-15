@@ -13,7 +13,7 @@ export function Navbar({ showMenu }) {
     {
       label: 'Experience',
       url: '#experience',
-      show: false,
+      show: true,
     },
     {
       label: 'Project',
@@ -36,7 +36,9 @@ export function Navbar({ showMenu }) {
             {listItem.map((i, index) =>
               i.show ? (
                 <li key={index} className={styles.item}>
-                  <a href={i.url}>{i.label}</a>
+                  <a href={i.url} target="_blank" rel="nofollow">
+                    {i.label}
+                  </a>
                 </li>
               ) : (
                 <></>
