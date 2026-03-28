@@ -1,18 +1,18 @@
 name: Lint
 on: [pull_request]
 env:
-  NODE_VERSION: 20
+  NODE_VERSION: 22
 
 jobs:
   linting:
     runs-on: ubuntu-latest
     steps:
-      - name: Install NodeJS 20
-        uses: actions/setup-node@v4
+      - name: Install NodeJS 22
+        uses: actions/setup-node@v6
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Code Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Install Dependencies
         run: npm run ci
       - name: Run ESLint
