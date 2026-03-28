@@ -24,3 +24,5 @@ package-lock.json
 *.sw?
 
 package-lock.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
